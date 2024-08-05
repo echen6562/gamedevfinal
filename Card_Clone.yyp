@@ -24,6 +24,7 @@
     {"id":{"name":"fnt_arial","path":"fonts/fnt_arial/fnt_arial.yy",},"order":0,},
     {"id":{"name":"snd_thunder","path":"sounds/snd_thunder/snd_thunder.yy",},"order":3,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":5,},
+    {"id":{"name":"obj_person","path":"objects/obj_person/obj_person.yy",},"order":7,},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":0,},
   ],
   "Options": [
