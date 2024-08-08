@@ -18,7 +18,6 @@ if (position_meeting(mouse_x, mouse_y, id) && in_player_hand) {
 
 //the manager is in the picking state
 if(obj_card_manager.state == STATES.PICK) {
-	//if the player has not yet selected two cards
 	if(ds_list_size(obj_card_manager.player_selected) < 1) {
 		//and if the card is in the player's hand and is not face up
 		if(in_player_hand) {
@@ -50,3 +49,28 @@ if(obj_card_manager.state == STATES.PICK) {
 	}
 }
 
+//if the card is farther than 1 from its target
+if(abs(x - target_x) > 1) {
+	//move towards the target by 10%
+	x = lerp(x, target_x, .1);
+	//draw above other cards
+	depth = -1000;
+	//if the card is less than 1 from its target
+} else {
+	//set its x to the target as well as the depth
+	x = target_x;
+	depth = target_depth;
+}
+
+//if the card is farther than 1 from its target
+if(abs(y - target_y) > 1) {
+	//move towards the target by 10%
+	y = lerp(y, target_y, .1);
+	//draw above other cards
+	depth = -1000;
+	//if the cards is less than 1 from its target
+} else {
+	//set the y to the target as well as the depth
+	y = target_y;
+	depth = target_depth;
+}
