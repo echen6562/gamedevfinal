@@ -4,7 +4,7 @@
   "name": "snd_shield",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.89,
+  "volume": 0.68,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,

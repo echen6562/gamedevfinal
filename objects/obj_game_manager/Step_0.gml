@@ -9,4 +9,5 @@ else if(obj_enemy.hp <= 0){
 
 if(end_timer > end_delay){
 	room_goto(rm_end);
+	audio_stop_all();
 }
